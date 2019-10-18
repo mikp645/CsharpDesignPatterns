@@ -24,6 +24,20 @@ namespace CsharpDesignPatterns.Base
             ColorType = color;
         }
 
+        public virtual void CleanFrame()
+        {
+            Console.WriteLine("Cleaning Frame...");
+        }
+
+        public virtual void AirTires()
+        {
+            Console.WriteLine("Airing up tires...");
+        }
+        public virtual void TestRide()
+        {
+            Console.WriteLine("Taking the bike for a test ride...");
+        }
+
         public override string ToString()
         {
             return this.GetType().Name + " Bicycle Color is " + ColorType +
